@@ -12,7 +12,7 @@ import Foundation
  Model for a SpaceX rocket launch.
  - Remark: SwiftUI prefers models to be reference types, so I am using class instead of struct in the event I want to convert the project to use SwiftUI and Combine later.
  */
-final class Launch: Codable {
+final class Launch: Decodable {
     /// Name for this mission.
     var missionName: String = ""
     /// The time of the mission.
@@ -21,15 +21,15 @@ final class Launch: Codable {
     var missionIds: [String]?
     /// The name of the rocket.
     var rocketName: String = ""
-    /// Whether this launch has parts that are reused.
-    //var reused: Bool = false
+    /// Rocket used on this launch.
+    var rocket: Rocket
     
     enum CodingKeys: String, CodingKey {
         case missionName = "mission_name"
         case launchDate = "launch_date_unix"
         case missionIds = "mission_id"
         case rocketName = "rocket_name"
-        //case reused = "reused"
+        case rocket = "rocket"
     }
     
     init(from decoder: Decoder) throws {
@@ -39,9 +39,7 @@ final class Launch: Codable {
             launchDate = Date(timeIntervalSince1970: launchDateInterval)
         }
         missionIds = try container.decodeIfPresent([String].self, forKey: .missionIds)
-        
-        
-        
+        rocket = try container.decode(Rocket.self, forKey: .rocket)
     }
 }
 

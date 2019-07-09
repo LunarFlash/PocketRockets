@@ -11,7 +11,6 @@
 		6718706E99121E686E60DE7E /* Pods_PocketRocketsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E4323AB903475FB145C6130 /* Pods_PocketRocketsTests.framework */; };
 		9D3DEB2322D3C15600DDE02F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3DEB2222D3C15600DDE02F /* AppDelegate.swift */; };
 		9D3DEB2522D3C15600DDE02F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3DEB2422D3C15600DDE02F /* SceneDelegate.swift */; };
-		9D3DEB2722D3C15600DDE02F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3DEB2622D3C15600DDE02F /* ViewController.swift */; };
 		9D3DEB2A22D3C15600DDE02F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D3DEB2822D3C15600DDE02F /* Main.storyboard */; };
 		9D3DEB2C22D3C15600DDE02F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D3DEB2B22D3C15600DDE02F /* Assets.xcassets */; };
 		9D3DEB2F22D3C15600DDE02F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D3DEB2D22D3C15600DDE02F /* LaunchScreen.storyboard */; };
@@ -20,6 +19,8 @@
 		9D3DEB5622D3C4C000DDE02F /* Launch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3DEB5522D3C4C000DDE02F /* Launch.swift */; };
 		9D3DEB5A22D3C92800DDE02F /* WebAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3DEB5922D3C92800DDE02F /* WebAPI.swift */; };
 		9D3DEB5C22D3D48900DDE02F /* Rocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3DEB5B22D3D48900DDE02F /* Rocket.swift */; };
+		9D3DEB5E22D4600800DDE02F /* LaunchesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3DEB5D22D4600800DDE02F /* LaunchesTableViewController.swift */; };
+		9D3DEB6122D5191400DDE02F /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3DEB6022D5191400DDE02F /* Reusable.swift */; };
 		E8F7C11256D341C0190DDE8C /* Pods_PocketRockets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29F7FD7618E91D4A6C7933B4 /* Pods_PocketRockets.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,7 +50,6 @@
 		9D3DEB1F22D3C15600DDE02F /* PocketRockets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PocketRockets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D3DEB2222D3C15600DDE02F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D3DEB2422D3C15600DDE02F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9D3DEB2622D3C15600DDE02F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9D3DEB2922D3C15600DDE02F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9D3DEB2B22D3C15600DDE02F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D3DEB2E22D3C15600DDE02F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -63,6 +63,8 @@
 		9D3DEB5522D3C4C000DDE02F /* Launch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Launch.swift; sourceTree = "<group>"; };
 		9D3DEB5922D3C92800DDE02F /* WebAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebAPI.swift; sourceTree = "<group>"; };
 		9D3DEB5B22D3D48900DDE02F /* Rocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rocket.swift; sourceTree = "<group>"; };
+		9D3DEB5D22D4600800DDE02F /* LaunchesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesTableViewController.swift; sourceTree = "<group>"; };
+		9D3DEB6022D5191400DDE02F /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 		9ED0C454FE752B22A19B6E5B /* Pods-PocketRocketsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PocketRocketsUITests.release.xcconfig"; path = "Target Support Files/Pods-PocketRocketsUITests/Pods-PocketRocketsUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C630BF3611FD062A14404599 /* Pods_PocketRocketsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PocketRocketsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA4BF08945B23732DAE3A94E /* Pods-PocketRocketsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PocketRocketsUITests.debug.xcconfig"; path = "Target Support Files/Pods-PocketRocketsUITests/Pods-PocketRocketsUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -145,13 +147,13 @@
 		9D3DEB2122D3C15600DDE02F /* PocketRockets */ = {
 			isa = PBXGroup;
 			children = (
+				9D3DEB5F22D5190000DDE02F /* Protocols */,
 				9D3DEB5822D3C91100DDE02F /* Networking */,
 				9D3DEB5722D3C8AF00DDE02F /* Controllers */,
 				9D3DEB5422D3C2FE00DDE02F /* Models */,
 				9D3DEB5222D3C23200DDE02F /* Shared */,
 				9D3DEB2222D3C15600DDE02F /* AppDelegate.swift */,
 				9D3DEB2422D3C15600DDE02F /* SceneDelegate.swift */,
-				9D3DEB2622D3C15600DDE02F /* ViewController.swift */,
 				9D3DEB2822D3C15600DDE02F /* Main.storyboard */,
 				9D3DEB2B22D3C15600DDE02F /* Assets.xcassets */,
 				9D3DEB2D22D3C15600DDE02F /* LaunchScreen.storyboard */,
@@ -197,6 +199,7 @@
 		9D3DEB5722D3C8AF00DDE02F /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				9D3DEB5D22D4600800DDE02F /* LaunchesTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -207,6 +210,14 @@
 				9D3DEB5922D3C92800DDE02F /* WebAPI.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		9D3DEB5F22D5190000DDE02F /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				9D3DEB6022D5191400DDE02F /* Reusable.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -431,11 +442,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D3DEB5A22D3C92800DDE02F /* WebAPI.swift in Sources */,
-				9D3DEB2722D3C15600DDE02F /* ViewController.swift in Sources */,
+				9D3DEB5E22D4600800DDE02F /* LaunchesTableViewController.swift in Sources */,
 				9D3DEB2322D3C15600DDE02F /* AppDelegate.swift in Sources */,
 				9D3DEB5C22D3D48900DDE02F /* Rocket.swift in Sources */,
 				9D3DEB5622D3C4C000DDE02F /* Launch.swift in Sources */,
 				9D3DEB2522D3C15600DDE02F /* SceneDelegate.swift in Sources */,
+				9D3DEB6122D5191400DDE02F /* Reusable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
