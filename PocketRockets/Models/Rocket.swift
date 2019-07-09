@@ -25,9 +25,13 @@ final class Rocket: Decodable {
     var payloads = [RocketPayload]()
     
     // MARK: - Computed properties
+    /// Number of reused components from the stage 1 cores and stage 2 payloads of the rocket
+    var reusedCount: Int {
+        return  cores.filter{ $0.reused }.count + payloads.filter{ $0.reused }.count
+    }
     /// Whether this rocket has any reusable parts for the first or second stage.
     var hasReused: Bool {
-        return cores.filter{ $0.reused }.count + payloads.filter{ $0.reused }.count > 0
+        return reusedCount > 0
     }
     
     enum CodingKeys: String, CodingKey {
@@ -36,8 +40,8 @@ final class Rocket: Decodable {
         case rocketType = "rocket_type"
         case firstStage = "first_stage"
         case secondStage = "second_stage"
-        case cores = "cores"
-        case payloads = "payloads"
+        case cores
+        case payloads
     }
     
     init(from decoder: Decoder) throws {
@@ -66,7 +70,6 @@ final class RocketCore: Decodable, Reusable {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         reused = try container.decode(Bool.self, forKey: .reused)
     }
-    
 }
 
 /*

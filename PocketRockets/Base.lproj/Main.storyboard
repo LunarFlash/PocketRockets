@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14766.15"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -15,13 +16,31 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="zvw-6i-Aq9">
-                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="LaunchCell" rowHeight="204" id="zvw-6i-Aq9" customClass="LaunchTableViewCell" customModule="PocketRockets" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="204"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zvw-6i-Aq9" id="qCj-UN-759">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="204"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VUU-rh-NCD" userLabel="CardView">
+                                            <rect key="frame" x="20" y="12" width="374" height="180"/>
+                                            <color key="backgroundColor" name="Kiwi"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="160" id="CYa-w0-bph"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="VUU-rh-NCD" firstAttribute="trailing" secondItem="qCj-UN-759" secondAttribute="trailingMargin" id="a6k-Ri-ZGA"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="VUU-rh-NCD" secondAttribute="bottom" constant="1" id="jnw-Pa-L77"/>
+                                        <constraint firstItem="VUU-rh-NCD" firstAttribute="top" secondItem="qCj-UN-759" secondAttribute="topMargin" constant="1" id="ujB-UL-vWR"/>
+                                        <constraint firstItem="VUU-rh-NCD" firstAttribute="leading" secondItem="qCj-UN-759" secondAttribute="leadingMargin" id="zgG-0E-J1U"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="cardView" destination="VUU-rh-NCD" id="E5K-ZO-MgL"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -54,4 +73,9 @@
             <point key="canvasLocation" x="573.91304347826087" y="368.97321428571428"/>
         </scene>
     </scenes>
+    <resources>
+        <namedColor name="Kiwi">
+            <color name="ibMissingResourceColor" catalog="#$assets-com.apple.dt.DVTUserInterfaceKit" colorSpace="catalog"/>
+        </namedColor>
+    </resources>
 </document>
