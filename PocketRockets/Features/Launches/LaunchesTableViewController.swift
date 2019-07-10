@@ -10,8 +10,9 @@ import UIKit
 /**
  Displays a list of SpaceX rocket launches.
  */
-class LaunchesTableViewController: UITableViewController {
+final class LaunchesTableViewController: UITableViewController {
     
+    // NOTE: - In a more complex screen I may use a View Model (MVVM) or Coordinator to refactor logic away from the controller.
     /// State variable for this tableview representing a list of upcomming rocket launches.
     /// - remark: The property observer triggers refresh of the tableview whenever this state variable changes..
     var upcomingLaunches = [Launch]() {
