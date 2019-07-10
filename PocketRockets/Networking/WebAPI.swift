@@ -14,13 +14,6 @@ import Alamofire
  - Remark: Use the shared singleton instance.
  */
 class WebAPI {
-    /// URL endpoings for  SpaceX's  API
-    class Endpoints {
-        /// Upcoming launches
-        static let upcomingLaunches = URL(string: "https://api.spacexdata.com/v3/launches/upcoming")!
-        /// Next launch
-        static let nextLaunch = URL(string: "https://api.spacexdata.com/v3/launches/next")!
-    }
     
     /// Shared instance of the web API.
     static let shared = WebAPI()
@@ -65,5 +58,13 @@ class WebAPI {
                 completion(nil, response.error)
             }
         }
+    }
+    
+    /// URL endpoings for  SpaceX's  API
+    class Endpoints {
+        /// Upcoming launches
+        static let upcomingLaunches = URL(string: "https://api.spacexdata.com/v3/launches/upcoming")!
+        /// Next launch
+        static let nextLaunch = URL(string: "https://api.spacexdata.com/v3/launches/next")!
     }
 }
