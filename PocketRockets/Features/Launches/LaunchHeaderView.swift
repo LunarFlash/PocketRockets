@@ -13,11 +13,26 @@ import Lottie
 @IBDesignable class LaunchHeaderView: UIView {
     
     /// View animating a rocket
-    let rocketAnimationView = AnimationView()
+    let rocketAnimationView: AnimationView = {
+        let animationView = AnimationView()
+        animationView.loopMode = .loop
+        return animationView
+    }()
     /// Label displaying countdown for the next SpaceX rocket launch.
-    let countdownLabel = UILabel()
+    let countdownLabel: UILabel = {
+        let label = UILabel()
+        label.font = UIFont.systemFont(ofSize: 40, weight: .black)
+        label.textAlignment = .center
+        return label
+    }()
     /// Label displaying subscript text: next launch is in...
-    let subscriptLabel = UILabel()
+    let subscriptLabel: UILabel = {
+        let label = UILabel()
+        label.textAlignment = .center
+        label.font = UIFont.systemFont(ofSize: 12, weight: .light)
+        label.text = "next launch is in..."
+        return label
+    }()
     
     /// State variable for countdown
     var launchInterval: TimeInterval? {
@@ -35,38 +50,35 @@ import Lottie
     // Called after the view and its subviews were allocated and initialized. It is guaranteed that the view will have all its outlet instance variables set. If initWithCoder: is the beginning of the nib unarchiving process, then awakeFromNib is the end.
     override func awakeFromNib() {
         super.awakeFromNib()
-        setupUI()
+        setupConstraints()
     }
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
-        setupUI()
+        setupConstraints()
     }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        setupUI()
+        setupConstraints()
     }
     
     // Implement this to allow storyboard to render our custom view.
     override func prepareForInterfaceBuilder() {
         super.prepareForInterfaceBuilder()
-        setupUI()
+        setupConstraints()
     }
 }
 
 extension LaunchHeaderView {
     /// Setup  animations and countdown label.
-    private func setupUI() {
-        countdownLabel.text = ""
-        countdownLabel.font = UIFont.systemFont(ofSize: 40, weight: .black)
+    private func setupConstraints() {
         setupAnimationView()
     }
     
     /// Setup animation view.
     private func setupAnimationView() {
         addSubview(rocketAnimationView)
-        rocketAnimationView.loopMode = .loop
         rocketAnimationView.snp.makeConstraints { (make) in
             make.width.height.equalTo(100)
             make.centerX.equalToSuperview()
@@ -79,7 +91,6 @@ extension LaunchHeaderView {
     
     /// Setup the , launch countdown label
     private func setupCountdownLabel() {
-        countdownLabel.textAlignment = .center
         addSubview(countdownLabel)
         countdownLabel.snp.makeConstraints { (make) in
             make.leading.equalToSuperview()
@@ -90,9 +101,6 @@ extension LaunchHeaderView {
     }
     
     private func setupSubscriptLabel() {
-        subscriptLabel.textAlignment = .center
-        subscriptLabel.font = UIFont.systemFont(ofSize: 12, weight: .light)
-        subscriptLabel.text = "next launch is in..."
         addSubview(subscriptLabel)
         subscriptLabel.snp.makeConstraints { (make) in
             make.height.equalTo(14)
