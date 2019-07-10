@@ -13,5 +13,5 @@ import Foundation
  */
 protocol Reusable {
     /// Whether this rocket component is reusable
-    var reused: Bool { get }
+    var reused: Bool? { get }
 }

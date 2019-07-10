@@ -18,7 +18,8 @@ class LaunchTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
+        addShadowToCard()
+        setCornerRadius(radius: 10)
     }
 }
 
@@ -31,22 +32,22 @@ extension LaunchTableViewCell {
         
     }
     
-    /**
-     Perform initial setup duties
-     */
+    
+    /// Perform initial setup duties
     private func setupUI() {
         addShadowToCard()
         setCornerRadius(radius: 10)
     }
     
-    func addShadowToCard(shadowRadius: CGFloat = 8.0, shadowOpacity: Float = 0.7, shadowColor: CGColor = UIColor.gray.cgColor, shadowOffset: CGSize = CGSize(width: 0, height: 5)) {
+    /// Add shadow
+    private func addShadowToCard(shadowRadius: CGFloat = 8.0, shadowOpacity: Float = 0.7, shadowColor: CGColor = UIColor.gray.cgColor, shadowOffset: CGSize = CGSize(width: 0, height: 5)) {
         cardView.layer.shadowColor = shadowColor
         cardView.layer.shadowOffset = shadowOffset
         cardView.layer.shadowRadius = shadowRadius
         cardView.layer.shadowOpacity = shadowOpacity
     }
     
-    func setCornerRadius(radius: CGFloat) {
+    private func setCornerRadius(radius: CGFloat) {
         cardView.layer.cornerRadius = radius
     }
 
