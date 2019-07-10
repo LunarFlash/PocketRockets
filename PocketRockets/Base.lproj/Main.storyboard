@@ -7,27 +7,38 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Launches Table View Controller-->
+        <!--🚀LAUNCHES-->
         <scene sceneID="eJn-Al-9V9">
             <objects>
                 <tableViewController id="t79-ra-2Jt" customClass="LaunchesTableViewController" customModule="PocketRockets" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="2g8-vn-SyG">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="2g8-vn-SyG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="LaunchCell" rowHeight="204" id="zvw-6i-Aq9" customClass="LaunchTableViewCell" customModule="PocketRockets" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="204"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="LaunchCell" rowHeight="300" id="zvw-6i-Aq9" customClass="LaunchTableViewCell" customModule="PocketRockets" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="300"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zvw-6i-Aq9" id="qCj-UN-759">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="204"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VUU-rh-NCD" userLabel="CardView">
-                                            <rect key="frame" x="20" y="12" width="374" height="180"/>
+                                            <rect key="frame" x="20" y="12" width="374" height="276"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mission name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LlG-qc-5Dl">
+                                                    <rect key="frame" x="8" y="8" width="358" height="29"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                             <color key="backgroundColor" name="Kiwi"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="160" id="CYa-w0-bph"/>
+                                                <constraint firstItem="LlG-qc-5Dl" firstAttribute="top" secondItem="VUU-rh-NCD" secondAttribute="topMargin" id="Mma-p0-q3T"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="LlG-qc-5Dl" secondAttribute="trailing" id="P2r-Us-DFS"/>
+                                                <constraint firstItem="LlG-qc-5Dl" firstAttribute="leading" secondItem="VUU-rh-NCD" secondAttribute="leadingMargin" id="dGW-fH-Lap"/>
                                             </constraints>
                                         </view>
                                     </subviews>
@@ -40,6 +51,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="cardView" destination="VUU-rh-NCD" id="E5K-ZO-MgL"/>
+                                    <outlet property="missionNameLabel" destination="LlG-qc-5Dl" id="yCZ-DA-Qqc"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -48,7 +60,7 @@
                             <outlet property="delegate" destination="t79-ra-2Jt" id="00f-nH-ifm"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="C1P-xA-bhs"/>
+                    <navigationItem key="navigationItem" title="🚀LAUNCHES" id="C1P-xA-bhs"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QQe-AH-LjH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -59,8 +71,8 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xO2-se-xic" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jxc-Id-18v">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="jxc-Id-18v">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

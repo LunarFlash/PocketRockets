@@ -7,6 +7,7 @@ target 'PocketRockets' do
 
   # Pods for PocketRockets
   pod 'Alamofire'
+  pod 'SwiftDate'
 
   target 'PocketRocketsTests' do
     inherit! :search_paths

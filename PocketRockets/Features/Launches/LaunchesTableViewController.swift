@@ -39,6 +39,8 @@ class LaunchesTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // Note: - I am purposefully force casting here because I want the program to crash in the event that a cell isn't properly dequeued. This is best practice recommended by Apple engineers.
         let cell = tableView.dequeueReusableCell(withIdentifier: LaunchTableViewCell.reuseIdentifier, for: indexPath) as! LaunchTableViewCell
+        let launch = upcomingLaunches[indexPath.row]
+        cell.updateUI(launch)
         return cell
     }
     

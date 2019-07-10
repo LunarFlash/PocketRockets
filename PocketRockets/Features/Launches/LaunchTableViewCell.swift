@@ -14,7 +14,10 @@ import UIKit
 class LaunchTableViewCell: UITableViewCell {
     /// Reuse identifier
     static let reuseIdentifier = "LaunchCell"
+    // - Mark: Outlets
     @IBOutlet weak var cardView: UIView!
+    @IBOutlet weak var missionNameLabel: UILabel!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -29,7 +32,7 @@ extension LaunchTableViewCell {
      - parameter launch: Data model for a launch used to populate this view.
      */
     func updateUI(_ launch: Launch) {
-        
+        missionNameLabel.text = launch.missionName
     }
     
     
@@ -40,11 +43,12 @@ extension LaunchTableViewCell {
     }
     
     /// Add shadow
-    private func addShadowToCard(shadowRadius: CGFloat = 8.0, shadowOpacity: Float = 0.7, shadowColor: CGColor = UIColor.gray.cgColor, shadowOffset: CGSize = CGSize(width: 0, height: 5)) {
+    private func addShadowToCard(shadowRadius: CGFloat = 8.0, shadowOpacity: Float = 0.4, shadowColor: CGColor = UIColor.gray.cgColor, shadowOffset: CGSize = CGSize(width: 0, height: 5)) {
         cardView.layer.shadowColor = shadowColor
         cardView.layer.shadowOffset = shadowOffset
         cardView.layer.shadowRadius = shadowRadius
         cardView.layer.shadowOpacity = shadowOpacity
+        cardView.backgroundColor = UIColor.white
     }
     
     private func setCornerRadius(radius: CGFloat) {
