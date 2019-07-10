@@ -12,6 +12,8 @@ import UIKit
  */
 final class LaunchesTableViewController: UITableViewController {
     
+    @IBOutlet weak var launchHeaderView: LaunchHeaderView!
+    
     // NOTE: - In a more complex screen I may use a View Model (MVVM) or Coordinator to refactor logic away from the controller.
     /// State variable for this tableview representing a list of upcomming rocket launches.
     /// - remark: The property observer triggers refresh of the tableview whenever this state variable changes..
@@ -20,9 +22,11 @@ final class LaunchesTableViewController: UITableViewController {
     }
     
     /// State variable for the next launch view representing launch data for the next SpaceX launch.
-    /// - remark: The property observer triggers refresh of the next launch view.
+    /// - remark: The property observer triggers refresh of the next launch header view.
     var nextLaunch: Launch? {
-        didSet { }
+        didSet {
+            launchHeaderView.runTimer(with: self.nextLaunch?.launchDate ?? Date())
+        }
     }
 
     override func viewDidLoad() {

@@ -22,6 +22,8 @@
 		9D3DEB5E22D4600800DDE02F /* LaunchesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3DEB5D22D4600800DDE02F /* LaunchesTableViewController.swift */; };
 		9D3DEB6122D5191400DDE02F /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3DEB6022D5191400DDE02F /* Reusable.swift */; };
 		9DA6F58722D583450081031F /* UIView+Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA6F58622D583450081031F /* UIView+Card.swift */; };
+		9DA6F58A22D5896C0081031F /* LaunchHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA6F58922D5896B0081031F /* LaunchHeaderView.swift */; };
+		9DA6F58C22D58FB40081031F /* rocket_flying.json in Resources */ = {isa = PBXBuildFile; fileRef = 9DA6F58B22D58FB40081031F /* rocket_flying.json */; };
 		9DB7971222D539050000838A /* LaunchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB7971122D539050000838A /* LaunchTableViewCell.swift */; };
 		E8F7C11256D341C0190DDE8C /* Pods_PocketRockets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29F7FD7618E91D4A6C7933B4 /* Pods_PocketRockets.framework */; };
 /* End PBXBuildFile section */
@@ -68,6 +70,8 @@
 		9D3DEB5D22D4600800DDE02F /* LaunchesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesTableViewController.swift; sourceTree = "<group>"; };
 		9D3DEB6022D5191400DDE02F /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 		9DA6F58622D583450081031F /* UIView+Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Card.swift"; sourceTree = "<group>"; };
+		9DA6F58922D5896B0081031F /* LaunchHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchHeaderView.swift; sourceTree = "<group>"; };
+		9DA6F58B22D58FB40081031F /* rocket_flying.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = rocket_flying.json; sourceTree = "<group>"; };
 		9DB7971122D539050000838A /* LaunchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchTableViewCell.swift; sourceTree = "<group>"; };
 		9ED0C454FE752B22A19B6E5B /* Pods-PocketRocketsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PocketRocketsUITests.release.xcconfig"; path = "Target Support Files/Pods-PocketRocketsUITests/Pods-PocketRocketsUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C630BF3611FD062A14404599 /* Pods_PocketRocketsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PocketRocketsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -162,6 +166,7 @@
 				9D3DEB2B22D3C15600DDE02F /* Assets.xcassets */,
 				9D3DEB2D22D3C15600DDE02F /* LaunchScreen.storyboard */,
 				9D3DEB3022D3C15600DDE02F /* Info.plist */,
+				9DA6F58B22D58FB40081031F /* rocket_flying.json */,
 			);
 			path = PocketRockets;
 			sourceTree = "<group>";
@@ -228,6 +233,7 @@
 		9DB7971022D538C00000838A /* Launches */ = {
 			isa = PBXGroup;
 			children = (
+				9DA6F58922D5896B0081031F /* LaunchHeaderView.swift */,
 				9D3DEB5D22D4600800DDE02F /* LaunchesTableViewController.swift */,
 				9DB7971122D539050000838A /* LaunchTableViewCell.swift */,
 			);
@@ -344,6 +350,7 @@
 			files = (
 				9D3DEB2F22D3C15600DDE02F /* LaunchScreen.storyboard in Resources */,
 				9D3DEB2C22D3C15600DDE02F /* Assets.xcassets in Resources */,
+				9DA6F58C22D58FB40081031F /* rocket_flying.json in Resources */,
 				9D3DEB2A22D3C15600DDE02F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -457,6 +464,7 @@
 			files = (
 				9D3DEB5A22D3C92800DDE02F /* WebAPI.swift in Sources */,
 				9D3DEB5E22D4600800DDE02F /* LaunchesTableViewController.swift in Sources */,
+				9DA6F58A22D5896C0081031F /* LaunchHeaderView.swift in Sources */,
 				9D3DEB2322D3C15600DDE02F /* AppDelegate.swift in Sources */,
 				9D3DEB5C22D3D48900DDE02F /* Rocket.swift in Sources */,
 				9DB7971222D539050000838A /* LaunchTableViewCell.swift in Sources */,

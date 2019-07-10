@@ -1,24 +1,28 @@
 PODS:
   - Alamofire (4.8.2)
   - lottie-ios (3.1.1)
+  - SnapKit (5.0.0)
   - SwiftDate (6.0.3)
 
 DEPENDENCIES:
   - Alamofire
   - lottie-ios
+  - SnapKit
   - SwiftDate
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
     - lottie-ios
+    - SnapKit
     - SwiftDate
 
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
   lottie-ios: 43a472d22b2dd2bed292cc4010c0b4d2e66d3ba8
+  SnapKit: fd22d10eb9aff484d79a8724eab922c1ddf89bcf
   SwiftDate: 8d4f14bf1ef68e95094511504856547bf9e3e1a6
 
-PODFILE CHECKSUM: 1e36a2da71fd31f9dcd8bb0a4fb2c8a25838c740
+PODFILE CHECKSUM: 23bb58fb068667032ba691f1064c80f11cf7daba
 
 COCOAPODS: 1.7.2
