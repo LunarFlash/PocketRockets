@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--🚀LAUNCHES-->
+        <!--LAUNCHES-->
         <scene sceneID="eJn-Al-9V9">
             <objects>
                 <tableViewController id="t79-ra-2Jt" customClass="LaunchesTableViewController" customModule="PocketRockets" customModuleProvider="target" sceneMemberID="viewController">
@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="LaunchCell" rowHeight="300" id="zvw-6i-Aq9" customClass="LaunchTableViewCell" customModule="PocketRockets" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="LaunchCell" rowHeight="300" id="zvw-6i-Aq9" customClass="LaunchTableViewCell" customModule="PocketRockets" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="300"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zvw-6i-Aq9" id="qCj-UN-759">
@@ -27,18 +27,55 @@
                                             <rect key="frame" x="20" y="12" width="374" height="276"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mission name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LlG-qc-5Dl">
-                                                    <rect key="frame" x="8" y="8" width="358" height="29"/>
-                                                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
+                                                    <rect key="frame" x="8" y="8" width="358" height="36"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TBM-pm-uJx">
+                                                    <rect key="frame" x="8" y="247" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RKg-uv-W7C">
+                                                    <rect key="frame" x="8" y="52" width="32" height="16"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="13"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qZ1-MU-oSy">
+                                                    <rect key="frame" x="8" y="92" width="61.5" height="29"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EzV-hZ-pbF">
+                                                    <rect key="frame" x="8" y="129" width="37.5" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <color key="backgroundColor" name="Kiwi"/>
                                             <constraints>
+                                                <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="TBM-pm-uJx" secondAttribute="trailing" id="4JM-rP-Bsg"/>
+                                                <constraint firstItem="TBM-pm-uJx" firstAttribute="leading" secondItem="VUU-rh-NCD" secondAttribute="leadingMargin" id="4S2-No-HAb"/>
                                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="160" id="CYa-w0-bph"/>
+                                                <constraint firstItem="qZ1-MU-oSy" firstAttribute="top" secondItem="RKg-uv-W7C" secondAttribute="bottom" constant="24" id="FH9-Ms-cSu"/>
                                                 <constraint firstItem="LlG-qc-5Dl" firstAttribute="top" secondItem="VUU-rh-NCD" secondAttribute="topMargin" id="Mma-p0-q3T"/>
+                                                <constraint firstItem="RKg-uv-W7C" firstAttribute="leading" secondItem="VUU-rh-NCD" secondAttribute="leadingMargin" id="Obw-LS-63i"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="LlG-qc-5Dl" secondAttribute="trailing" id="P2r-Us-DFS"/>
+                                                <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="qZ1-MU-oSy" secondAttribute="trailing" id="XAH-YR-Eyk"/>
+                                                <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="RKg-uv-W7C" secondAttribute="trailing" id="XRM-bn-dmn"/>
+                                                <constraint firstItem="TBM-pm-uJx" firstAttribute="bottom" secondItem="VUU-rh-NCD" secondAttribute="bottomMargin" id="Xza-yc-5AF"/>
+                                                <constraint firstItem="TBM-pm-uJx" firstAttribute="top" relation="greaterThanOrEqual" secondItem="EzV-hZ-pbF" secondAttribute="bottom" constant="100" id="YYh-6h-RlW"/>
+                                                <constraint firstItem="EzV-hZ-pbF" firstAttribute="leading" secondItem="VUU-rh-NCD" secondAttribute="leadingMargin" id="Ygq-sy-mAh"/>
+                                                <constraint firstItem="EzV-hZ-pbF" firstAttribute="top" secondItem="qZ1-MU-oSy" secondAttribute="bottom" constant="8" id="a2l-QU-Bre"/>
                                                 <constraint firstItem="LlG-qc-5Dl" firstAttribute="leading" secondItem="VUU-rh-NCD" secondAttribute="leadingMargin" id="dGW-fH-Lap"/>
+                                                <constraint firstItem="RKg-uv-W7C" firstAttribute="top" secondItem="LlG-qc-5Dl" secondAttribute="bottom" constant="8" id="kfS-c4-upx"/>
+                                                <constraint firstItem="qZ1-MU-oSy" firstAttribute="leading" secondItem="VUU-rh-NCD" secondAttribute="leadingMargin" id="pbm-yv-oLO"/>
+                                                <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="EzV-hZ-pbF" secondAttribute="trailing" id="wP1-ZM-i9q"/>
                                             </constraints>
                                         </view>
                                     </subviews>
@@ -51,7 +88,11 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="cardView" destination="VUU-rh-NCD" id="E5K-ZO-MgL"/>
+                                    <outlet property="launchDateLabel" destination="TBM-pm-uJx" id="GKc-wJ-6ch"/>
+                                    <outlet property="missionIdLabel" destination="RKg-uv-W7C" id="Waf-3y-91g"/>
                                     <outlet property="missionNameLabel" destination="LlG-qc-5Dl" id="yCZ-DA-Qqc"/>
+                                    <outlet property="reuseLabel" destination="EzV-hZ-pbF" id="R1Z-Hw-cHs"/>
+                                    <outlet property="rocketNameLabel" destination="qZ1-MU-oSy" id="Hy6-62-rFR"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -60,7 +101,7 @@
                             <outlet property="delegate" destination="t79-ra-2Jt" id="00f-nH-ifm"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="🚀LAUNCHES" id="C1P-xA-bhs"/>
+                    <navigationItem key="navigationItem" title="LAUNCHES" id="C1P-xA-bhs"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QQe-AH-LjH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

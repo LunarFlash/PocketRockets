@@ -35,6 +35,10 @@ final class Rocket: Decodable, CustomStringConvertible{
     var hasReused: Bool {
         return reusedCount > 0
     }
+    /// Formatted string for the number of reusable components on this rocket. Sum of stage 1 core components and stage 2 payload components.
+    var reuseString: String {
+        return String(format: "♲ \(reusedCount) reusable components")
+    }
     
     var description: String {
         return "rocketId: \(rocketId)\nrocketName: \(rocketName)\nrocketType: \(rocketType)\nreusedCount: \(reusedCount)"

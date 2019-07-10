@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+import SwiftDate
 /**
  Model for a SpaceX rocket launch.
  - Remark: SwiftUI prefers models to be reference types, so I am using class instead of struct in the event I want to convert the project to use SwiftUI and Combine later.
@@ -19,16 +19,21 @@ final class Launch: Decodable {
     var launchDate: Date?
     /// List of Ids for this mission.
     var missionIds: [String]?
-    /// The name of the rocket.
-    var rocketName: String = ""
     /// Rocket used on this launch.
     var rocket: Rocket
+    
+    // MARK: - Computed properties
+    /// String used to describe launch date
+    var launchDateString: String {
+        guard let date = launchDate else { return "" }
+        let relative = date.toRelative(style: RelativeFormatter.twitterStyle(), locale: Locales.english)
+        return String(format: "\(relative) on \(date.toFormat("MMM dd yy"))")
+    }
     
     enum CodingKeys: String, CodingKey {
         case missionName = "mission_name"
         case launchDate = "launch_date_unix"
         case missionIds = "mission_id"
-        case rocketName = "rocket_name"
         case rocket = "rocket"
     }
     
