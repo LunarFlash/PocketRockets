@@ -22,6 +22,10 @@
 		9D3DEB5E22D4600800DDE02F /* LaunchesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3DEB5D22D4600800DDE02F /* LaunchesTableViewController.swift */; };
 		9D3DEB6122D5191400DDE02F /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3DEB6022D5191400DDE02F /* Reusable.swift */; };
 		9D4D775822D5AC6F002CE0F4 /* Simulator Screen Shot - iPhone Xs - 2019-07-10 at 01.16.35.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D4D775722D5AC6F002CE0F4 /* Simulator Screen Shot - iPhone Xs - 2019-07-10 at 01.16.35.png */; };
+		9D4D776222D5B17C002CE0F4 /* app_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D4D776122D5B17C002CE0F4 /* app_icon.png */; };
+		9D4D776622D5B1AA002CE0F4 /* iTunesArtwork@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D4D776322D5B1AA002CE0F4 /* iTunesArtwork@3x.png */; };
+		9D4D776722D5B1AA002CE0F4 /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D4D776422D5B1AA002CE0F4 /* iTunesArtwork@2x.png */; };
+		9D4D776822D5B1AA002CE0F4 /* iTunesArtwork@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D4D776522D5B1AA002CE0F4 /* iTunesArtwork@1x.png */; };
 		9DA6F58722D583450081031F /* UIView+Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA6F58622D583450081031F /* UIView+Card.swift */; };
 		9DA6F58A22D5896C0081031F /* LaunchHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA6F58922D5896B0081031F /* LaunchHeaderView.swift */; };
 		9DA6F58C22D58FB40081031F /* rocket_flying.json in Resources */ = {isa = PBXBuildFile; fileRef = 9DA6F58B22D58FB40081031F /* rocket_flying.json */; };
@@ -71,6 +75,10 @@
 		9D3DEB5D22D4600800DDE02F /* LaunchesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesTableViewController.swift; sourceTree = "<group>"; };
 		9D3DEB6022D5191400DDE02F /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 		9D4D775722D5AC6F002CE0F4 /* Simulator Screen Shot - iPhone Xs - 2019-07-10 at 01.16.35.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Simulator Screen Shot - iPhone Xs - 2019-07-10 at 01.16.35.png"; sourceTree = "<group>"; };
+		9D4D776122D5B17C002CE0F4 /* app_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = app_icon.png; sourceTree = "<group>"; };
+		9D4D776322D5B1AA002CE0F4 /* iTunesArtwork@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@3x.png"; sourceTree = "<group>"; };
+		9D4D776422D5B1AA002CE0F4 /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@2x.png"; sourceTree = "<group>"; };
+		9D4D776522D5B1AA002CE0F4 /* iTunesArtwork@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@1x.png"; sourceTree = "<group>"; };
 		9DA6F58622D583450081031F /* UIView+Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Card.swift"; sourceTree = "<group>"; };
 		9DA6F58922D5896B0081031F /* LaunchHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchHeaderView.swift; sourceTree = "<group>"; };
 		9DA6F58B22D58FB40081031F /* rocket_flying.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = rocket_flying.json; sourceTree = "<group>"; };
@@ -236,6 +244,10 @@
 		9D4D775622D5AC58002CE0F4 /* Media */ = {
 			isa = PBXGroup;
 			children = (
+				9D4D776522D5B1AA002CE0F4 /* iTunesArtwork@1x.png */,
+				9D4D776422D5B1AA002CE0F4 /* iTunesArtwork@2x.png */,
+				9D4D776322D5B1AA002CE0F4 /* iTunesArtwork@3x.png */,
+				9D4D776122D5B17C002CE0F4 /* app_icon.png */,
 				9D4D775722D5AC6F002CE0F4 /* Simulator Screen Shot - iPhone Xs - 2019-07-10 at 01.16.35.png */,
 			);
 			path = Media;
@@ -359,7 +371,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D4D776222D5B17C002CE0F4 /* app_icon.png in Resources */,
+				9D4D776622D5B1AA002CE0F4 /* iTunesArtwork@3x.png in Resources */,
 				9D3DEB2F22D3C15600DDE02F /* LaunchScreen.storyboard in Resources */,
+				9D4D776722D5B1AA002CE0F4 /* iTunesArtwork@2x.png in Resources */,
+				9D4D776822D5B1AA002CE0F4 /* iTunesArtwork@1x.png in Resources */,
 				9D3DEB2C22D3C15600DDE02F /* Assets.xcassets in Resources */,
 				9D4D775822D5AC6F002CE0F4 /* Simulator Screen Shot - iPhone Xs - 2019-07-10 at 01.16.35.png in Resources */,
 				9DA6F58C22D58FB40081031F /* rocket_flying.json in Resources */,
