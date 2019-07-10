@@ -21,7 +21,7 @@ import Lottie
     /// Label displaying countdown for the next SpaceX rocket launch.
     let countdownLabel: UILabel = {
         let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 40, weight: .black)
+        label.font = UIFont.systemFont(ofSize: 30, weight: .black)
         label.textAlignment = .center
         return label
     }()
@@ -37,9 +37,17 @@ import Lottie
     /// State variable for countdown
     var launchInterval: TimeInterval? {
         didSet {
-            countdownLabel.fadeTransition(0.4)
-            countdownLabel.text = self.launchInterval?.toClock()
+            // We don't want to directly update the countdown label here.
+            // This is a technique recommended by Apple engineer to dirty the layout when state changes. Checkout WWDC session 233 https://developer.apple.com/videos/play/wwdc2018/233/
+            // By dirtying the layout, we let UIKit make the determination when in the drawing cylcle to update all the queued up changes
+            setNeedsLayout()
         }
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        guard let launchInterval = launchInterval else { return }
+        updateCoundownLabel(interval: launchInterval)
     }
     
     private var timer = Timer()
@@ -112,6 +120,7 @@ extension LaunchHeaderView {
     }
     
     /// Start the timer
+    /// - parameter launchDate: Date of the next launch
     func runTimer(with launchDate: Date) {
         self.nextLaunchDate = launchDate
         timer = Timer.scheduledTimer(timeInterval: 1, target: self,   selector: (#selector(fire)), userInfo: nil, repeats: true)
@@ -120,5 +129,10 @@ extension LaunchHeaderView {
     /// Update the countdowb time interval
     @objc func fire() {
         launchInterval = nextLaunchDate?.timeIntervalSinceNow
+    }
+    
+    func updateCoundownLabel(interval: TimeInterval) {
+        countdownLabel.fadeTransition(0.4)
+        countdownLabel.text = self.launchInterval?.toClock()
     }
 }
