@@ -25,6 +25,7 @@
 		9D4D776622D5B1AA002CE0F4 /* iTunesArtwork@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D4D776322D5B1AA002CE0F4 /* iTunesArtwork@3x.png */; };
 		9D4D776722D5B1AA002CE0F4 /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D4D776422D5B1AA002CE0F4 /* iTunesArtwork@2x.png */; };
 		9D4D776822D5B1AA002CE0F4 /* iTunesArtwork@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D4D776522D5B1AA002CE0F4 /* iTunesArtwork@1x.png */; };
+		9D94773F22D5BA4700C12817 /* demo.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9D94773E22D5BA4700C12817 /* demo.gif */; };
 		9DA6F58722D583450081031F /* UIView+Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA6F58622D583450081031F /* UIView+Card.swift */; };
 		9DA6F58A22D5896C0081031F /* LaunchHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA6F58922D5896B0081031F /* LaunchHeaderView.swift */; };
 		9DA6F58C22D58FB40081031F /* rocket_flying.json in Resources */ = {isa = PBXBuildFile; fileRef = 9DA6F58B22D58FB40081031F /* rocket_flying.json */; };
@@ -77,6 +78,7 @@
 		9D4D776322D5B1AA002CE0F4 /* iTunesArtwork@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@3x.png"; sourceTree = "<group>"; };
 		9D4D776422D5B1AA002CE0F4 /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@2x.png"; sourceTree = "<group>"; };
 		9D4D776522D5B1AA002CE0F4 /* iTunesArtwork@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@1x.png"; sourceTree = "<group>"; };
+		9D94773E22D5BA4700C12817 /* demo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = demo.gif; sourceTree = "<group>"; };
 		9DA6F58622D583450081031F /* UIView+Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Card.swift"; sourceTree = "<group>"; };
 		9DA6F58922D5896B0081031F /* LaunchHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchHeaderView.swift; sourceTree = "<group>"; };
 		9DA6F58B22D58FB40081031F /* rocket_flying.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = rocket_flying.json; sourceTree = "<group>"; };
@@ -241,6 +243,7 @@
 		9D4D775622D5AC58002CE0F4 /* Media */ = {
 			isa = PBXGroup;
 			children = (
+				9D94773E22D5BA4700C12817 /* demo.gif */,
 				9D4D776522D5B1AA002CE0F4 /* iTunesArtwork@1x.png */,
 				9D4D776422D5B1AA002CE0F4 /* iTunesArtwork@2x.png */,
 				9D4D776322D5B1AA002CE0F4 /* iTunesArtwork@3x.png */,
@@ -375,6 +378,7 @@
 				9D4D776822D5B1AA002CE0F4 /* iTunesArtwork@1x.png in Resources */,
 				9D3DEB2C22D3C15600DDE02F /* Assets.xcassets in Resources */,
 				9D4D775822D5AC6F002CE0F4 /* Simulator Screen Shot - iPhone Xs - 2019-07-10 at 01.16.35.png in Resources */,
+				9D94773F22D5BA4700C12817 /* demo.gif in Resources */,
 				9DA6F58C22D58FB40081031F /* rocket_flying.json in Resources */,
 				9D3DEB2A22D3C15600DDE02F /* Main.storyboard in Resources */,
 			);
@@ -669,6 +673,7 @@
 			baseConfigurationReference = 96D074DC4A4EEF7DB6945270 /* Pods-PocketRockets.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HD5UELD683;
 				INFOPLIST_FILE = PocketRockets/Info.plist;
@@ -679,6 +684,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Vento.PocketRockets;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -689,6 +695,7 @@
 			baseConfigurationReference = F2964F7AA86C336810FC97BD /* Pods-PocketRockets.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HD5UELD683;
 				INFOPLIST_FILE = PocketRockets/Info.plist;
@@ -699,6 +706,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Vento.PocketRockets;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
