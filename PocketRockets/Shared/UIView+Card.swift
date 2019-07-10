@@ -15,7 +15,6 @@ extension UIView {
         layer.shadowOffset = shadowOffset
         layer.shadowRadius = shadowRadius
         layer.shadowOpacity = shadowOpacity
-        backgroundColor = UIColor.white
     }
     
     /**

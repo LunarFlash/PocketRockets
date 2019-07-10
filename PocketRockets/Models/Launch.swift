@@ -23,11 +23,17 @@ final class Launch: Decodable {
     var rocket: Rocket
     
     // MARK: - Computed properties
+    
     /// String used to describe launch date
     var launchDateString: String {
         guard let date = launchDate else { return "" }
         let relative = date.toRelative(style: RelativeFormatter.twitterStyle(), locale: Locales.english)
         return String(format: "\(relative) on \(date.toFormat("MMM dd yy"))")
+    }
+    
+    /// Time interval from now until launch time.
+    var launchInterval: TimeInterval {
+        return launchDate?.timeIntervalSinceNow ?? 0
     }
     
     enum CodingKeys: String, CodingKey {

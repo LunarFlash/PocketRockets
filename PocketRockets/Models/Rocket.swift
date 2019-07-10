@@ -25,6 +25,7 @@ final class Rocket: Decodable, CustomStringConvertible{
     var payloads = [RocketPayload]()
     
     // MARK: - Computed properties
+    
     /// Number of reused components from the stage 1 cores and stage 2 payloads of the rocket
     var reusedCount: Int {
         let coreReusableCount = cores.compactMap{$0.reused}.count

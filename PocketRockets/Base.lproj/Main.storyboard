@@ -3,8 +3,8 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14766.15"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <capability name="iOS 13.0 system colors" minToolsVersion="11.0"/>
     </dependencies>
     <scenes>
         <!--LAUNCHES-->
@@ -57,7 +57,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <color key="backgroundColor" name="Kiwi"/>
+                                            <color key="backgroundColor" cocoaTouchSystemColor="systemPinkColor"/>
                                             <constraints>
                                                 <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="TBM-pm-uJx" secondAttribute="trailing" id="4JM-rP-Bsg"/>
                                                 <constraint firstItem="TBM-pm-uJx" firstAttribute="leading" secondItem="VUU-rh-NCD" secondAttribute="leadingMargin" id="4S2-No-HAb"/>
@@ -126,9 +126,4 @@
             <point key="canvasLocation" x="573.91304347826087" y="368.97321428571428"/>
         </scene>
     </scenes>
-    <resources>
-        <namedColor name="Kiwi">
-            <color name="ibMissingResourceColor" catalog="#$assets-com.apple.dt.DVTUserInterfaceKit" colorSpace="catalog"/>
-        </namedColor>
-    </resources>
 </document>
