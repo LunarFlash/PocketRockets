@@ -10,7 +10,6 @@
 		63C061A9CC254CFA0F54C24B /* Pods_PocketRocketsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C630BF3611FD062A14404599 /* Pods_PocketRocketsUITests.framework */; };
 		6718706E99121E686E60DE7E /* Pods_PocketRocketsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E4323AB903475FB145C6130 /* Pods_PocketRocketsTests.framework */; };
 		9D3DEB2322D3C15600DDE02F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3DEB2222D3C15600DDE02F /* AppDelegate.swift */; };
-		9D3DEB2522D3C15600DDE02F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D3DEB2422D3C15600DDE02F /* SceneDelegate.swift */; };
 		9D3DEB2A22D3C15600DDE02F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D3DEB2822D3C15600DDE02F /* Main.storyboard */; };
 		9D3DEB2C22D3C15600DDE02F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D3DEB2B22D3C15600DDE02F /* Assets.xcassets */; };
 		9D3DEB2F22D3C15600DDE02F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D3DEB2D22D3C15600DDE02F /* LaunchScreen.storyboard */; };
@@ -58,7 +57,6 @@
 		96D074DC4A4EEF7DB6945270 /* Pods-PocketRockets.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PocketRockets.debug.xcconfig"; path = "Target Support Files/Pods-PocketRockets/Pods-PocketRockets.debug.xcconfig"; sourceTree = "<group>"; };
 		9D3DEB1F22D3C15600DDE02F /* PocketRockets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PocketRockets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D3DEB2222D3C15600DDE02F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9D3DEB2422D3C15600DDE02F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		9D3DEB2922D3C15600DDE02F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9D3DEB2B22D3C15600DDE02F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D3DEB2E22D3C15600DDE02F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -172,7 +170,6 @@
 				9D3DEB5422D3C2FE00DDE02F /* Models */,
 				9D3DEB5222D3C23200DDE02F /* Shared */,
 				9D3DEB2222D3C15600DDE02F /* AppDelegate.swift */,
-				9D3DEB2422D3C15600DDE02F /* SceneDelegate.swift */,
 				9D3DEB2822D3C15600DDE02F /* Main.storyboard */,
 				9D3DEB2B22D3C15600DDE02F /* Assets.xcassets */,
 				9D3DEB2D22D3C15600DDE02F /* LaunchScreen.storyboard */,
@@ -498,7 +495,6 @@
 				9DB7971222D539050000838A /* LaunchTableViewCell.swift in Sources */,
 				9DA6F58722D583450081031F /* UIView+Card.swift in Sources */,
 				9D3DEB5622D3C4C000DDE02F /* Launch.swift in Sources */,
-				9D3DEB2522D3C15600DDE02F /* SceneDelegate.swift in Sources */,
 				9D3DEB6122D5191400DDE02F /* Reusable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -676,6 +672,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HD5UELD683;
 				INFOPLIST_FILE = PocketRockets/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -695,6 +692,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HD5UELD683;
 				INFOPLIST_FILE = PocketRockets/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
